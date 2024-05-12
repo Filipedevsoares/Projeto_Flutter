@@ -10,13 +10,10 @@ abstract class _HistoryController with Store {
 
   @observable
   bool isLoading = false;
-
   @observable
   bool hasAddress = false;
-
   @observable
   List<AddressModel> addressHistoryList = [];
-
   @action
   Future<void> loadData() async {
     isLoading = true;
